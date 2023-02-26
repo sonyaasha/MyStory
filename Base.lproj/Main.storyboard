@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wdg-OB-Vyf">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sansa-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nio-DB-kfp">
+                                <rect key="frame" x="16" y="606.66666666666663" width="343" height="35"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="SANSA STARK">
+                                    <color key="baseBackgroundColor" systemColor="separatorColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="2MF-fg-PfA" kind="show" id="Z2L-Hc-Os9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXx-90-AmO">
+                                <rect key="frame" x="16" y="653" width="343" height="35"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Before King's Landing"/>
+                                <connections>
+                                    <segue destination="93D-eb-5tg" kind="show" id="QuI-iR-xJl"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="Sansa_Stark" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zRn-FS-E8y">
+                                <rect key="frame" x="16" y="107.00000000000003" width="343" height="468.66666666666674"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ta-79-Y1I">
+                                <rect key="frame" x="16" y="687" width="343" height="35"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="King's Landing"/>
+                                <connections>
+                                    <segue destination="JtE-sO-6YT" kind="show" id="CDu-Iy-bgC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Gs-In-VT1">
+                                <rect key="frame" x="16" y="723" width="343" height="35"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="After King's Landing"/>
+                                <connections>
+                                    <segue destination="R3X-Xu-uJ1" kind="show" id="2KL-a7-56o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="4Gs-In-VT1" firstAttribute="top" secondItem="4ta-79-Y1I" secondAttribute="bottom" constant="1" id="44b-Be-8qR"/>
+                            <constraint firstItem="tXx-90-AmO" firstAttribute="trailing" secondItem="4ta-79-Y1I" secondAttribute="trailing" id="5fJ-3s-rT6"/>
+                            <constraint firstItem="zRn-FS-E8y" firstAttribute="leading" secondItem="nio-DB-kfp" secondAttribute="leading" id="8Yb-zV-Dwb"/>
+                            <constraint firstItem="4ta-79-Y1I" firstAttribute="trailing" secondItem="4Gs-In-VT1" secondAttribute="trailing" id="Bcz-j6-hoI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4Gs-In-VT1" secondAttribute="bottom" constant="20" id="CP4-CE-lXn"/>
+                            <constraint firstItem="nio-DB-kfp" firstAttribute="top" secondItem="zRn-FS-E8y" secondAttribute="bottom" constant="30.999999999999886" id="MTt-Fh-ARo"/>
+                            <constraint firstItem="zRn-FS-E8y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Nzk-RK-9By"/>
+                            <constraint firstItem="nio-DB-kfp" firstAttribute="leading" secondItem="tXx-90-AmO" secondAttribute="leading" id="PGI-a8-dEt"/>
+                            <constraint firstItem="zRn-FS-E8y" firstAttribute="trailing" secondItem="nio-DB-kfp" secondAttribute="trailing" id="TRf-Zj-8ET"/>
+                            <constraint firstItem="tXx-90-AmO" firstAttribute="top" secondItem="nio-DB-kfp" secondAttribute="bottom" constant="11.333333333333371" id="Zxj-jz-Agq"/>
+                            <constraint firstItem="nio-DB-kfp" firstAttribute="trailing" secondItem="tXx-90-AmO" secondAttribute="trailing" id="a7G-tA-sWR"/>
+                            <constraint firstItem="zRn-FS-E8y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="cJG-hL-45d"/>
+                            <constraint firstItem="zRn-FS-E8y" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dPG-7f-pkd"/>
+                            <constraint firstItem="4Gs-In-VT1" firstAttribute="top" secondItem="tXx-90-AmO" secondAttribute="bottom" constant="35" id="frN-ox-a4O"/>
+                            <constraint firstItem="4ta-79-Y1I" firstAttribute="leading" secondItem="4Gs-In-VT1" secondAttribute="leading" id="kf5-3X-waO"/>
+                            <constraint firstItem="tXx-90-AmO" firstAttribute="leading" secondItem="4ta-79-Y1I" secondAttribute="leading" id="rmi-AB-YBX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sansa" id="nTB-fM-Aa1"/>
+                    <connections>
+                        <outlet property="afterButton" destination="4Gs-In-VT1" id="w83-I5-7fq"/>
+                        <outlet property="beforeButton" destination="tXx-90-AmO" id="t8b-Q2-2zC"/>
+                        <outlet property="duringButton" destination="4ta-79-Y1I" id="KMa-GS-ukb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1007.2" y="2.9556650246305418"/>
+        </scene>
+        <!--BEFORE KING'S LANDING-->
+        <scene sceneID="HOX-VR-wAa">
+            <objects>
+                <viewController id="93D-eb-5tg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PHk-HY-oiL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lWq-ng-viS">
+                                <rect key="frame" x="44" y="141" width="290" height="156"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="156" id="ihu-FX-eLw"/>
+                                </constraints>
+                                <string key="text">Spending her young years in Winterfell close to her family, Sansa was eager to travel to a new city, become a part of King's Landing and then Joffrey's Queen. Sansa was gullible, naive and too young to make such difficult decisions. However, what she has experienced in King's Landing brought her Stark strength.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" misplaced="YES" image="young-sansa" translatesAutoresizingMaskIntoConstraints="NO" id="oUS-lO-bHy">
+                                <rect key="frame" x="41" y="323" width="292" height="359"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="e1p-5f-Zug"/>
+                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                        <constraints>
+                            <constraint firstItem="oUS-lO-bHy" firstAttribute="leading" secondItem="e1p-5f-Zug" secondAttribute="leading" constant="41" id="0N7-fb-d2X"/>
+                            <constraint firstItem="e1p-5f-Zug" firstAttribute="bottom" secondItem="oUS-lO-bHy" secondAttribute="bottom" constant="96" id="CkQ-Qc-MXX"/>
+                            <constraint firstItem="lWq-ng-viS" firstAttribute="leading" secondItem="e1p-5f-Zug" secondAttribute="leading" constant="44" id="Ft6-Fa-tnh"/>
+                            <constraint firstItem="oUS-lO-bHy" firstAttribute="top" secondItem="lWq-ng-viS" secondAttribute="bottom" constant="26" id="IB9-ks-b1J"/>
+                            <constraint firstItem="oUS-lO-bHy" firstAttribute="centerX" secondItem="PHk-HY-oiL" secondAttribute="centerX" id="JsK-iQ-P5u"/>
+                            <constraint firstItem="e1p-5f-Zug" firstAttribute="trailing" secondItem="lWq-ng-viS" secondAttribute="trailing" constant="41" id="nQD-8H-6ta"/>
+                            <constraint firstItem="lWq-ng-viS" firstAttribute="top" secondItem="e1p-5f-Zug" secondAttribute="top" constant="50" id="uNN-By-caf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="BEFORE KING'S LANDING" id="Plj-0e-x4m"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9fd-Mp-NoI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-529.00763358778624" y="718.30985915492965"/>
+        </scene>
+        <!--KING'S LANDING-->
+        <scene sceneID="8ji-1Y-x56">
+            <objects>
+                <viewController id="JtE-sO-6YT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GK3-n6-HRt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="x8v-Xs-eBX">
+                                <rect key="frame" x="44" y="513" width="287" height="155"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Promised to become Joffrey's Queen, so Sansa obeys her king and lives a royal life. However, Sansa is fond of her family, and she remains a Stark, yet still lacks strength. After what her family faces and after learning about Joffrey's nature, Sansa is in a survival mode. Yet, she escapes just become another's caprive.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" misplaced="YES" image="sansa-kingslanding" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X18-9s-PEj">
+                                <rect key="frame" x="45" y="144" width="286" height="347"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="347" id="Knq-qp-nAt"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Q4U-aM-nba"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        <constraints>
+                            <constraint firstItem="X18-9s-PEj" firstAttribute="trailing" secondItem="x8v-Xs-eBX" secondAttribute="trailing" id="3gz-Ha-9jg"/>
+                            <constraint firstItem="X18-9s-PEj" firstAttribute="centerX" secondItem="x8v-Xs-eBX" secondAttribute="centerX" id="6Ed-lX-rtx"/>
+                            <constraint firstItem="Q4U-aM-nba" firstAttribute="bottom" secondItem="x8v-Xs-eBX" secondAttribute="bottom" constant="110" id="Cx3-uc-75G"/>
+                            <constraint firstItem="X18-9s-PEj" firstAttribute="centerX" secondItem="GK3-n6-HRt" secondAttribute="centerX" id="ESh-Xg-imS"/>
+                            <constraint firstItem="X18-9s-PEj" firstAttribute="top" secondItem="Q4U-aM-nba" secondAttribute="top" constant="53" id="EmH-Yb-qMp"/>
+                            <constraint firstItem="X18-9s-PEj" firstAttribute="leading" secondItem="Q4U-aM-nba" secondAttribute="leading" constant="45" id="LRo-h1-vP1"/>
+                            <constraint firstItem="x8v-Xs-eBX" firstAttribute="top" secondItem="X18-9s-PEj" secondAttribute="bottom" constant="22" id="skn-M0-OZ6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="KING'S LANDING" id="ahw-W6-bwT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zaB-Kn-6Zm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="335.19999999999999" y="746.17691154422789"/>
+        </scene>
+        <!--AFTER KING'S LANDING-->
+        <scene sceneID="AK9-Vc-96b">
+            <objects>
+                <viewController id="R3X-Xu-uJ1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Tv-Qh-1Bm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ddH-Pp-vKi">
+                                <rect key="frame" x="45" y="132" width="285" height="156"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="156" id="5EV-Df-wOk"/>
+                                </constraints>
+                                <string key="text">Spending her young years in Winterfell close to her family, Sansa was eager to travel to a new city, become a part of King's Landing and then Joffrey's Queen. Sansa was gullible, naive and too young to make such difficult decisions. However, what she has experienced in King's Landing brought her Stark strength.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="sansa-winterfell" translatesAutoresizingMaskIntoConstraints="NO" id="OP3-El-tDE">
+                                <rect key="frame" x="45" y="356" width="285" height="359"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="74m-g6-3oh"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="ddH-Pp-vKi" firstAttribute="leading" secondItem="74m-g6-3oh" secondAttribute="leading" constant="45" id="2Wp-Hx-bvx"/>
+                            <constraint firstItem="ddH-Pp-vKi" firstAttribute="trailing" secondItem="OP3-El-tDE" secondAttribute="trailing" id="R2o-I0-Gxq"/>
+                            <constraint firstItem="ddH-Pp-vKi" firstAttribute="top" secondItem="74m-g6-3oh" secondAttribute="top" constant="41" id="W09-cE-4dY"/>
+                            <constraint firstItem="OP3-El-tDE" firstAttribute="top" secondItem="ddH-Pp-vKi" secondAttribute="bottom" constant="68" id="c4Y-8f-6qM"/>
+                            <constraint firstItem="74m-g6-3oh" firstAttribute="bottom" secondItem="OP3-El-tDE" secondAttribute="bottom" constant="63" id="dH1-ro-Unn"/>
+                            <constraint firstItem="ddH-Pp-vKi" firstAttribute="centerX" secondItem="0Tv-Qh-1Bm" secondAttribute="centerX" id="rAO-gy-joG"/>
+                            <constraint firstItem="ddH-Pp-vKi" firstAttribute="leading" secondItem="OP3-El-tDE" secondAttribute="leading" id="reu-Y7-t8w"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="AFTER KING'S LANDING" id="Lgc-3f-29L"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bg6-zI-gEE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1246" y="749"/>
+        </scene>
+        <!--Sansa Stark-->
+        <scene sceneID="3bG-qf-C4r">
+            <objects>
+                <viewController id="2MF-fg-PfA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SjG-ZV-71i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="700" verticalCompressionResistancePriority="700" image="sassnsa" translatesAutoresizingMaskIntoConstraints="NO" id="BJ2-Nz-yEL">
+                                <rect key="frame" x="64" y="123" width="244" height="234"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="234" id="ijT-Oh-mM1"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Teh-lU-ltg">
+                                <rect key="frame" x="65" y="403" width="244" height="85"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="a4f-oF-DEg"/>
+                                </constraints>
+                                <string key="text">Oldest daughter of the Stark family, 
+lady to be, yet circumstances 
+turn her into something else.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WeX-gB-cjK"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="BJ2-Nz-yEL" firstAttribute="leading" secondItem="WeX-gB-cjK" secondAttribute="leading" constant="64" id="Clv-DH-NrK"/>
+                            <constraint firstItem="WeX-gB-cjK" firstAttribute="trailing" secondItem="BJ2-Nz-yEL" secondAttribute="trailing" constant="67" id="Hcb-jS-dAc"/>
+                            <constraint firstItem="Teh-lU-ltg" firstAttribute="leading" secondItem="WeX-gB-cjK" secondAttribute="leading" constant="65" id="QJh-0H-sxU"/>
+                            <constraint firstItem="WeX-gB-cjK" firstAttribute="bottom" secondItem="Teh-lU-ltg" secondAttribute="bottom" constant="290" id="bGp-zR-LdX"/>
+                            <constraint firstItem="BJ2-Nz-yEL" firstAttribute="top" secondItem="WeX-gB-cjK" secondAttribute="top" constant="32" id="dnn-jD-Ahj"/>
+                            <constraint firstItem="Teh-lU-ltg" firstAttribute="centerX" secondItem="SjG-ZV-71i" secondAttribute="centerX" id="ybF-8c-R0f"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sansa Stark" id="HKr-we-EtE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tvo-ml-LtK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1812" y="33.990147783251231"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="t2D-FO-HM9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wdg-OB-Vyf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lc9-1C-hBX">
+                        <rect key="frame" x="0.0" y="47" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XkC-px-pYr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gaJ-jG-yih" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.799999999999997" y="2.9556650246305418"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Sansa_Stark" width="1000" height="1500"/>
+        <image name="sansa-kingslanding" width="1000" height="1385"/>
+        <image name="sansa-winterfell" width="2000" height="1500"/>
+        <image name="sassnsa" width="1440" height="1080"/>
+        <image name="young-sansa" width="1200" height="675"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
